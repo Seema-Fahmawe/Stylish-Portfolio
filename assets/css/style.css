@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*############# start navbar style #############*/
+
+nav {
+    width: 25%;
+    position: fixed;
+    left: 80%;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+nav label {
+    position: fixed;
+    right: 30px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    z-index: 999;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+nav label a {
+    color: #fff;
+    line-height: 50px;
+}
+
+#inpChecked {
+    display: none;
+}
+
+nav .nav-list {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+nav .nav-list .items {
+    border: 1px solid #1D809F;
+    height: 100vh;
+    background-color: #1D809F;
+}
+
+nav .nav-list .items .title-items {
+    background-color: rgba(52, 58, 64, 0.1);
+    height: 80px;
+    line-height: 50px;
+}
+
+nav .nav-list .items .title-items a {
+    color: #fff;
+    line-height: 4;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav .nav-list .items .item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav .nav-list .items .item a {
+    color: #fff;
+    padding: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#inpChecked:checked+.nav-list {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s;
+}
+
+nav label:hover {
+    background-color: #343a40;
+}
+
+nav .nav-list .items .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+/*################ end navbar style #############*/
+
+
+/*################ start header style ################*/
+
+
+header {
+    min-height: 32rem;
+    width: 100%;
+    padding-top: 11rem;
+    padding-bottom: 7rem;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../image/bg-masthead.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .header-content {
+    text-align: center;
+
+}
+
+header .header-content h1 {
+    font-size: 5.5rem;
+    color: #212529;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header .header-content h3 {
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #212529;
+    margin-bottom: 4rem;
+}
+
+header .header-content .header-button a {
+    padding: 1.25rem 2.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1D809F;
+    border: 1px solid #1D809F;
+}
+
+header .header-button:hover a {
+    background-color: #196d87;
+    border-color: #196d87;
+}
+
+
+/*############## end header style ##############*/
+
+
+/*############# start section about style ############### */
+.about {
+    padding: 7rem 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.2;
+}
+
+.about p {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #212529;
+}
+
+.about .desc a {
+    color: #1D809F;
+    text-decoration: underline;
+}
+
+.about button {
+    background-color: #212529;
+    border-color: #212529;
+    padding: 1.25rem 2.5rem;
+    border-radius: 5px;
+}
+
+.about button a {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.about .desc a:hover {
+    color: #17667f;
+}
+
+.about button:hover {
+    background-color: #1c1f23;
+    border-color: #1a1e21;
+}
+
+/*############## end section about style ################*/
+
+/*############## start section services-part1 style ############## */
+.services-part1 {
+    background-color: #1D809F;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+}
+
+
+.services-part1 .services-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.services-part1 .services-icons .service {
+    width: 24%;
+}
+
+.services-part1 h3 {
+    color: rgb(236, 184, 7);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.services-part1 h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.services-part1 .services-icons {
+   margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.services-part1 .services-icons .service .icon-image {
+    margin-bottom: 20px;
+}
+
+.services-part1 .services-icons .service .icon-image i {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #1D809F;
+    background-color: #fff;
+    line-height: 3;
+    font-size: 2.25rem;
+}
+
+.services-part1 .services-icons .service .icon-content strong {
+    font-weight: bolder;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.services-part1 .services-icons .service .icon-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*############# end section services-part1 style ############# */
+
+/*############## start section services-part2 style ############# */
+.services-part2 {
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../image/bg-callout.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.services-part2 .services-part2-content {
+    text-align: center;
+}
+
+.services-part2 .services-part2-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.services-part2 .services-part2-content button {
+    background-color: #1D809F;
+    border: 1px solid #1D809F;
+    border-radius: 0.25rem;
+    padding: 1.25rem 2.5rem;
+    text-align: center;
+}
+
+.services-part2 .services-part2-content button a {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.services-part2 button:hover {
+    background-color: #196d87;
+    border-color: #17667f;
+}
+
+/*############### end section services-part2 style ###############*/
+
+/*############### start section portfolio style ############### */
+.portfolio .container {
+    padding: 7.5rem 9rem;
+
+}
+
+.portfolio .container .port,
+.portfolio .container .title {
+    text-align: center;
+}
+
+.portfolio .container .port {
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(236, 184, 7);
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.portfolio .container .title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.portfolio .container .products .product {
+    width: 50%;
+    position: relative;
+}
+
+.portfolio .container .products .product .product-img {
+    display: inline;
+}
+
+.portfolio .container .products .product .product-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .container .products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .container .products .product .product-content {
+    width: 71%;
+    position: absolute;
+    top: 53%;
+    left: 15%;
+    z-index: 1;
+}
+
+.portfolio .container .products .product .product-content h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.portfolio .container .products .product .product-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.portfolio .container .products .product .product-img .overlay {
+    background-color: #1D809F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+.portfolio .container .products .product:hover .product-img img {
+    transform: scale(0.8);
+    transition: all 0.5s;
+}
+
+.portfolio .container .products .product:hover .overlay {
+    transform: scale(0.8);
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+/*############# end section portfolio style ############## */
+
+/*########### start section content style #############*/
+.content-section {
+    background-color: #1D809F;
+    text-align: center;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.content-section h2 {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content-section button {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-section button .btn1 {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    padding: 1.25rem 2.5rem;
+    color: #000;
+}
+
+.content-section button .btn2 {
+    background-color: #212529;
+    border: 1px solid #212529;
+    border-radius: 5px;
+    padding: 1.25rem 2.5rem;
+    color: #fff;
+}
+
+/*############## end section content style ###########*/
+
+/*############## start section map style #############*/
+.map {
+    height: 30rem;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*########### end section map style ##############*/
+
+/*start section footer style*/
+.footer {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer .footer-icons i {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid #1D809F;
+    background-color: #1D809F;
+    border-radius: 50%;
+    line-height: 4rem;
+    color: #fff;
+    font-size: 1.25rem;
+    margin-right: 7px;
+}
+
+.footer .footer-content {
+    padding-top: 3rem;
+
+}
+
+.footer .footer-content p {
+    color: #6c757d;
+    font-size: 0.875em;
+}
+
+
+.footer .static-iconFooter {
+    z-index: 99;
+    position: fixed;
+    top: 35rem;
+    left: 79rem;
+
+}
+
+.footer .static-iconFooter i {
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid rgba(52, 58, 64, 0.5);
+    border-radius: 0.25rem;
+    background-color: rgba(52, 58, 64, 0.5);
+    padding: 17px;
+}
+
+.footer .footer-icons i:hover {
+    background-color: #155d74;
+}
+
+.footer .static-iconFooter i:hover {
+    background-color: #343a40;
+}

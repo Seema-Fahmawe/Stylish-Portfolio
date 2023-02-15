@@ -1,0 +1,134 @@
+@media (max-width:991px) {
+    /*################## start header #################*/
+    nav{
+        width: 40%;
+        left:70%;
+    }
+    header {
+        height: 50vh;
+    }
+
+    header .header-content h1 {
+        font-size: 3rem;
+    }
+
+    /*################## end header #################*/
+
+    /*################ start section services-part1 ###############*/
+    .services-part1 .services-icons {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .services-part1 .services-icons .service {
+        width: 48%;
+    }
+
+    .services-part1 .services-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-part1 .services-icons .service .icon-content p {
+        padding-bottom: 50px;
+    }
+
+    /*################ end section services-part1 ###############*/
+
+    /*############## start section portfolio ############### */
+    .portfolio .container .products .product {
+        width: 100%;
+    }
+
+    .portfolio .container .products .product .product-img img {
+        height: 85%;
+    }
+
+    .portfolio .container .products .product .product-img .overlay {
+        height: 85%;
+    }
+
+    .portfolio .container .products .product .product-content {
+        width: 80%;
+        left: 10%;
+        top: 50%;
+    }
+
+    /*############# end section portfolio ############## */
+
+}
+
+/*  start media max-width:768px */
+@media (max-width:768px) {
+
+    /*############## start section about ############## */
+    .about p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about h2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*############### end section about ###############*/
+
+}
+
+/*  end media max-width:768px */
+
+
+
+/*  start media max-width:576px */
+@media (max-width:576px) {
+    /*################# start nav ##############*/
+    nav {
+        width: 70%;
+        left: 40%;
+    }
+    /*################# end nav ##############*/
+
+    /*############# start header ############*/
+    header {
+        padding-top: 7.5rem;
+    }
+
+    /*############# end header ############*/
+
+
+    /*############### start section services-part1 #################*/
+    .services-part1 .services-icons .service {
+        width: 100%;
+    }
+
+    /*############## end section services-part1 ##############*/
+
+    /*############### start section services-part2 #################*/
+    .services-part2 .services-part2-content h2 {
+        width: 20rem;
+    }
+
+    /*############### end section services-part2 #################*/
+
+    /*############# start section portfolio ############# */
+    .portfolio .container {
+        padding: 7.5rem 1rem;
+    }
+
+    .portfolio .container .products .product .product-content {
+        top: 30%;
+    }
+
+    /*############## end section portfolio ################ */
+
+    /*################ start section content #############*/
+    .content-section button {
+        flex-direction: column;
+    }
+
+    /*################ end section content #############*/
+
+}
+
+/*  end media max-width:576px */
